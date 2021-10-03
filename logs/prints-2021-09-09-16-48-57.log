@@ -1,0 +1,5 @@
+16:48:57.995 [main] INFO  resources.ExtentReportNG - system path is C:\Users\swamy\eclipse\SeleniumDemo
+16:49:04.419 [main] INFO  SeleniumTesting.Validation - driver initialized
+16:49:21.529 [main] INFO  SeleniumTesting.Validation - returning busses
+16:49:21.529 [main] ERROR SeleniumTesting.Validation - error
+16:49:21.529 [main] WARN  SeleniumTesting.Validation - warning

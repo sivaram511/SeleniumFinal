@@ -1,0 +1,4 @@
+15:52:51.379 [main] INFO  SeleniumTesting.Validation - driver initialized
+15:53:11.279 [main] INFO  SeleniumTesting.Validation - returning busses
+15:53:11.279 [main] ERROR SeleniumTesting.Validation - error
+15:53:11.279 [main] WARN  SeleniumTesting.Validation - warning

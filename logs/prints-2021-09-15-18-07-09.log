@@ -1,0 +1,3 @@
+18:07:09.802 [main] INFO  resources.ExtentReportNG - system path is C:\Users\swamy\eclipse\SeleniumDemo
+18:07:18.656 [pool-2-thread-1] INFO  SeleniumTesting.Validation - driver initialized
+18:07:19.136 [pool-2-thread-2] INFO  SeleniumTesting.Validation - driver initialized

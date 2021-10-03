@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [My First Suite]" parallel="methods">
+  <listeners>
+    <listener class-name="SeleniumTesting.Reports"/>
+  </listeners>
+  <test name="First Test(failed)" parallel="methods">
+    <groups>
+      <run>
+        <include name="abc"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="SeleniumTesting.Validation">
+        <methods>
+          <include name="After"/>
+          <include name="sel"/>
+          <include name="Before"/>
+        </methods>
+      </class> <!-- SeleniumTesting.Validation -->
+    </classes>
+  </test> <!-- First Test(failed) -->
+</suite> <!-- Failed suite [My First Suite] -->
