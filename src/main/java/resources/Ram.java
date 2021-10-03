@@ -3,7 +3,7 @@ package resources;
 public class Ram {
 
 floatt j=201;//comments
-	System.out.println("hai");
+	System.out.println("hai111");
 
 
 }
