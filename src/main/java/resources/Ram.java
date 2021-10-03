@@ -2,7 +2,7 @@ package resources;
 
 public class Ram {
 
-	int i=10;
+	int i=11;
 	int j=20;//comments
 
 
