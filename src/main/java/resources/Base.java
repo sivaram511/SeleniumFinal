@@ -10,23 +10,29 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Base {
 	WebDriver driver;
 	BufferedReader br;
 	Properties p=new Properties();
-	ThreadLocal<WebDriver> tl=new ThreadLocal<WebDriver>();
+	
 	public WebDriver Initialise() throws IOException {
-		String proppath="C:\\Users\\swamy\\eclipse\\SeleniumDemo\\src\\main\\java\\resources\\config.properties";
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\swamy\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		String proppath=System.getProperty("user.dir")+"\\src\\main\\java\\resources\\config.properties";
+		//System.setProperty("webdriver.chrome.driver","C:\\Users\\swamy\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		//driver=new ChromeDriver();
+		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
-		tl.set(driver);
+		
+		
 		br=new BufferedReader(new FileReader(proppath));
 		p.load(br);
 		System.out.println(p.getProperty("url"));
-		tl.get().get(p.getProperty("url"));
-		tl.get().manage().window().maximize();
-		tl.get().manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-		return tl.get();
+		driver.get(p.getProperty("url"));
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		
+		return driver;
 		
 		
 	}

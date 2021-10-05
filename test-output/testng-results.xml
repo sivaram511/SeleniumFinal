@@ -1,69 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="2" failed="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="My First Suite" duration-ms="40065" started-at="2021-09-15T13:01:44Z" finished-at="2021-09-15T13:02:24Z">
+  <suite name="My First Suite" duration-ms="2680" started-at="2021-10-04T12:31:22Z" finished-at="2021-10-04T12:31:24Z">
     <groups>
       <group name="abc">
         <method signature="Validation.sel()[pri:0, instance:SeleniumTesting.Validation@7674f035]" name="sel" class="SeleniumTesting.Validation"/>
         <method signature="Validation.sell()[pri:0, instance:SeleniumTesting.Validation@7674f035]" name="sell" class="SeleniumTesting.Validation"/>
       </group> <!-- abc -->
     </groups>
-    <test name="First Test" duration-ms="40065" started-at="2021-09-15T13:01:44Z" finished-at="2021-09-15T13:02:24Z">
+    <test name="First Test" duration-ms="2680" started-at="2021-10-04T12:31:22Z" finished-at="2021-10-04T12:31:24Z">
       <class name="SeleniumTesting.Validation">
-        <test-method status="PASS" signature="Before()[pri:0, instance:SeleniumTesting.Validation@7674f035]" name="Before" is-config="true" duration-ms="12504" started-at="2021-09-15T18:31:44Z" finished-at="2021-09-15T18:31:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Before -->
-        <test-method status="PASS" signature="Before()[pri:0, instance:SeleniumTesting.Validation@7674f035]" name="Before" is-config="true" duration-ms="12504" started-at="2021-09-15T18:31:44Z" finished-at="2021-09-15T18:31:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Before -->
-        <test-method status="FAIL" signature="sel()[pri:0, instance:SeleniumTesting.Validation@7674f035]" name="sel" duration-ms="16720" started-at="2021-09-15T18:31:56Z" finished-at="2021-09-15T18:32:13Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="Before()[pri:0, instance:SeleniumTesting.Validation@7674f035]" name="Before" is-config="true" duration-ms="0" started-at="2021-10-04T18:01:22Z" finished-at="2021-10-04T18:01:22Z">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="rb-calendar_onward_cal"]/table/tbody/tr[4]/td[@class="current day"]"}
-  (Session info: chrome=93.0.4577.63)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 92
+Current browser version is 94.0.4606.61 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-49ALIVKJ', ip: '192.168.29.246', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\swamy\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62503}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 41c4045f8ebd320937dfb5f151652112
-*** Element info: {Using=xpath, value=//*[@id="rb-calendar_onward_cal"]/table/tbody/tr[4]/td[@class="current day"]}]]>
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x009D2A33+2501171]
+	Ordinal0 [0x0096D1C1+2085313]
+	Ordinal0 [0x00871FA8+1056680]
+	Ordinal0 [0x0089020A+1180170]
+	Ordinal0 [0x0088C125+1163557]
+	Ordinal0 [0x0088997F+1153407]
+	Ordinal0 [0x008B999F+1350047]
+	Ordinal0 [0x008B960A+1349130]
+	Ordinal0 [0x008B551B+1332507]
+	Ordinal0 [0x00891D74+1187188]
+	Ordinal0 [0x00892BD9+1190873]
+	GetHandleVerifier [0x00B4EFE6+1504438]
+	GetHandleVerifier [0x00BFDDA5+2220661]
+	GetHandleVerifier [0x00A55589+481881]
+	GetHandleVerifier [0x00A54639+477961]
+	Ordinal0 [0x009728BD+2107581]
+	Ordinal0 [0x00976728+2123560]
+	Ordinal0 [0x00976862+2123874]
+	Ordinal0 [0x0097FA81+2161281]
+	BaseThreadInitThunk [0x75B76359+25]
+	RtlGetAppContainerNamedObjectPath [0x77358944+228]
+	RtlGetAppContainerNamedObjectPath [0x77358914+180]
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="rb-calendar_onward_cal"]/table/tbody/tr[4]/td[@class="current day"]"}
-  (Session info: chrome=93.0.4577.63)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 92
+Current browser version is 94.0.4606.61 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-49ALIVKJ', ip: '192.168.29.246', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\swamy\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62503}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 41c4045f8ebd320937dfb5f151652112
-*** Element info: {Using=xpath, value=//*[@id="rb-calendar_onward_cal"]/table/tbody/tr[4]/td[@class="current day"]}
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x009D2A33+2501171]
+	Ordinal0 [0x0096D1C1+2085313]
+	Ordinal0 [0x00871FA8+1056680]
+	Ordinal0 [0x0089020A+1180170]
+	Ordinal0 [0x0088C125+1163557]
+	Ordinal0 [0x0088997F+1153407]
+	Ordinal0 [0x008B999F+1350047]
+	Ordinal0 [0x008B960A+1349130]
+	Ordinal0 [0x008B551B+1332507]
+	Ordinal0 [0x00891D74+1187188]
+	Ordinal0 [0x00892BD9+1190873]
+	GetHandleVerifier [0x00B4EFE6+1504438]
+	GetHandleVerifier [0x00BFDDA5+2220661]
+	GetHandleVerifier [0x00A55589+481881]
+	GetHandleVerifier [0x00A54639+477961]
+	Ordinal0 [0x009728BD+2107581]
+	Ordinal0 [0x00976728+2123560]
+	Ordinal0 [0x00976862+2123874]
+	Ordinal0 [0x0097FA81+2161281]
+	BaseThreadInitThunk [0x75B76359+25]
+	RtlGetAppContainerNamedObjectPath [0x77358944+228]
+	RtlGetAppContainerNamedObjectPath [0x77358914+180]
+
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at PageObjects.RedBusLogin.enterDate(RedBusLogin.java:28)
-	at SeleniumTesting.Validation.sel(Validation.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at resources.Base.Initialise(Base.java:21)
+	at SeleniumTesting.Validation.Before(Validation.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:663)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:521)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:605)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:849)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1157)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
@@ -73,11 +119,135 @@ Session ID: 41c4045f8ebd320937dfb5f151652112
 	at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Before -->
+        <test-method status="FAIL" signature="Before()[pri:0, instance:SeleniumTesting.Validation@7674f035]" name="Before" is-config="true" duration-ms="0" started-at="2021-10-04T18:01:22Z" finished-at="2021-10-04T18:01:22Z">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 92
+Current browser version is 94.0.4606.61 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-49ALIVKJ', ip: '192.168.29.246', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x009D2A33+2501171]
+	Ordinal0 [0x0096D1C1+2085313]
+	Ordinal0 [0x00871FA8+1056680]
+	Ordinal0 [0x0089020A+1180170]
+	Ordinal0 [0x0088C125+1163557]
+	Ordinal0 [0x0088997F+1153407]
+	Ordinal0 [0x008B999F+1350047]
+	Ordinal0 [0x008B960A+1349130]
+	Ordinal0 [0x008B551B+1332507]
+	Ordinal0 [0x00891D74+1187188]
+	Ordinal0 [0x00892BD9+1190873]
+	GetHandleVerifier [0x00B4EFE6+1504438]
+	GetHandleVerifier [0x00BFDDA5+2220661]
+	GetHandleVerifier [0x00A55589+481881]
+	GetHandleVerifier [0x00A54639+477961]
+	Ordinal0 [0x009728BD+2107581]
+	Ordinal0 [0x00976728+2123560]
+	Ordinal0 [0x00976862+2123874]
+	Ordinal0 [0x0097FA81+2161281]
+	BaseThreadInitThunk [0x75B76359+25]
+	RtlGetAppContainerNamedObjectPath [0x77358944+228]
+	RtlGetAppContainerNamedObjectPath [0x77358914+180]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 92
+Current browser version is 94.0.4606.61 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-49ALIVKJ', ip: '192.168.29.246', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x009D2A33+2501171]
+	Ordinal0 [0x0096D1C1+2085313]
+	Ordinal0 [0x00871FA8+1056680]
+	Ordinal0 [0x0089020A+1180170]
+	Ordinal0 [0x0088C125+1163557]
+	Ordinal0 [0x0088997F+1153407]
+	Ordinal0 [0x008B999F+1350047]
+	Ordinal0 [0x008B960A+1349130]
+	Ordinal0 [0x008B551B+1332507]
+	Ordinal0 [0x00891D74+1187188]
+	Ordinal0 [0x00892BD9+1190873]
+	GetHandleVerifier [0x00B4EFE6+1504438]
+	GetHandleVerifier [0x00BFDDA5+2220661]
+	GetHandleVerifier [0x00A55589+481881]
+	GetHandleVerifier [0x00A54639+477961]
+	Ordinal0 [0x009728BD+2107581]
+	Ordinal0 [0x00976728+2123560]
+	Ordinal0 [0x00976862+2123874]
+	Ordinal0 [0x0097FA81+2161281]
+	BaseThreadInitThunk [0x75B76359+25]
+	RtlGetAppContainerNamedObjectPath [0x77358944+228]
+	RtlGetAppContainerNamedObjectPath [0x77358914+180]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at resources.Base.Initialise(Base.java:21)
+	at SeleniumTesting.Validation.Before(Validation.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:521)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:605)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:849)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1157)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Before -->
+        <test-method status="SKIP" signature="sel()[pri:0, instance:SeleniumTesting.Validation@7674f035]" name="sel" duration-ms="9" started-at="2021-10-04T18:01:24Z" finished-at="2021-10-04T18:01:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sel -->
-        <test-method status="PASS" signature="After()[pri:0, instance:SeleniumTesting.Validation@7674f035]" name="After" is-config="true" duration-ms="0" started-at="2021-09-15T18:32:24Z" finished-at="2021-09-15T18:32:24Z">
+        <test-method status="PASS" signature="After()[pri:0, instance:SeleniumTesting.Validation@7674f035]" name="After" is-config="true" duration-ms="1" started-at="2021-10-04T18:01:24Z" finished-at="2021-10-04T18:01:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After -->
+        <test-method status="SKIP" signature="sell()[pri:0, instance:SeleniumTesting.Validation@7674f035]" name="sell" duration-ms="1" started-at="2021-10-04T18:01:24Z" finished-at="2021-10-04T18:01:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sell -->
+        <test-method status="PASS" signature="After()[pri:0, instance:SeleniumTesting.Validation@7674f035]" name="After" is-config="true" duration-ms="1" started-at="2021-10-04T18:01:24Z" finished-at="2021-10-04T18:01:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- After -->

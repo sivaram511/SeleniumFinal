@@ -71,7 +71,7 @@ public class Validation extends Base {
 		Thread.sleep(1000);
 	}	
 	
-	@Test(dataProvider="sam")
+	@Test(dataProvider="sam",groups={"abc"})
 	public void Samp(String a,String b,String c) {
 	       System.out.println("string a is: "+a+" String b is: "+b);
 		

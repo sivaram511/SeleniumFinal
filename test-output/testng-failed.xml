@@ -13,6 +13,7 @@
     <classes>
       <class name="SeleniumTesting.Validation">
         <methods>
+          <include name="sell"/>
           <include name="After"/>
           <include name="sel"/>
           <include name="Before"/>

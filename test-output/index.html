@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-My_First_Suite">
-              <span class="suite-name border-failed">My First Suite</span>
+              <span class="suite-name border-skipped">My First Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-My_First_Suite">
-                    <span>C:\Users\swamy\eclipse\SeleniumDemo\testng.xml</span>
+                    <span>C:\Users\swamy\eclipse\TestNg2\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,21 +90,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">2 methods,  2 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-My_First_Suite" class="hide-methods failed suite-My_First_Suite"> (hide)</a> <!-- hide-methods failed suite-My_First_Suite -->
-                      <a href="#" panel-name="suite-My_First_Suite" class="show-methods failed suite-My_First_Suite"> (show)</a> <!-- show-methods failed suite-My_First_Suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-My_First_Suite" class="hide-methods skipped suite-My_First_Suite"> (hide)</a> <!-- hide-methods skipped suite-My_First_Suite -->
+                      <a href="#" panel-name="suite-My_First_Suite" class="show-methods skipped suite-My_First_Suite"> (show)</a> <!-- show-methods skipped suite-My_First_Suite -->
                     </span>
-                    <div class="method-list-content failed suite-My_First_Suite">
+                    <div class="method-list-content skipped suite-My_First_Suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-My_First_Suite" title="SeleniumTesting.Validation" hash-for-method="sel">sel</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-My_First_Suite -->
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_First_Suite" title="SeleniumTesting.Validation" hash-for-method="sell">sell</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-My_First_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,9 +121,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-My_First_Suite" class="panel My_First_Suite">
-          <div class="suite-My_First_Suite-class-failed">
+          <div class="suite-My_First_Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">SeleniumTesting.Validation</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -127,40 +132,21 @@
                   <a name="sel">
                   </a> <!-- sel -->
                   <span class="method-name">sel</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;rb-calendar_onward_cal&quot;]/table/tbody/tr[4]/td[@class=&quot;current day&quot;]&quot;}
-  (Session info: chrome=93.0.4577.63)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-49ALIVKJ&apos;, ip: &apos;192.168.29.246&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\swamy\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62503}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 41c4045f8ebd320937dfb5f151652112
-*** Element info: {Using=xpath, value=//*[@id=&quot;rb-calendar_onward_cal&quot;]/table/tbody/tr[4]/td[@class=&quot;current day&quot;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at PageObjects.RedBusLogin.enterDate(RedBusLogin.java:28)
-	at SeleniumTesting.Validation.sel(Validation.java:50)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sell">
+                  </a> <!-- sell -->
+                  <span class="method-name">sell</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-My_First_Suite-class-failed -->
+          </div> <!-- suite-My_First_Suite-class-skipped -->
         </div> <!-- panel My_First_Suite -->
         <div panel-name="test-xml-My_First_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\swamy\eclipse\SeleniumDemo\testng.xml</span>
+            <span class="header-content">C:\Users\swamy\eclipse\TestNg2\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -208,6 +194,10 @@ Session ID: 41c4045f8ebd320937dfb5f151652112
                 <span class="method-in-group-name">sel</span>
                 <br/>
               </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">sell</span>
+                <br/>
+              </div> <!-- method-in-group -->
             </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -225,16 +215,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'sel')
 data.setCell(0, 2, 'SeleniumTesting.Validation')
-data.setCell(0, 3, 16720);
+data.setCell(0, 3, 9);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'sell')
+data.setCell(1, 2, 'SeleniumTesting.Validation')
+data.setCell(1, 3, 1);
 window.suiteTableData['My_First_Suite']= { tableData: data, tableDiv: 'times-div-My_First_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 10 ms</span>
               <div id="times-div-My_First_Suite">
               </div> <!-- times-div-My_First_Suite -->
             </div> <!-- times-div -->
@@ -273,28 +267,32 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">SeleniumTesting.Validation</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Before</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Before</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">sell</span>
-                <span class="method-start">12504 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">sel</span>
-                <span class="method-start">12505 ms</span>
+                <span class="method-start">2587 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">After</span>
-                <span class="method-start">39919 ms</span>
+                <span class="method-start">2597 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">sell</span>
+                <span class="method-start">2664 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">After</span>
+                <span class="method-start">2665 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
